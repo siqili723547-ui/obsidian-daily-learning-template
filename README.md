@@ -12,9 +12,9 @@
   - `Codex`：直接读取 `AGENTS.md`，不需要额外复制规则文件。
   - `Claude`：需要把 `CLAUDE.example.md` 复制一份，并把副本改名为 `CLAUDE.md`。Claudian 会读取 `CLAUDE.md` 作为项目规则。
 
-推荐 Obsidian 插件：
+可选 Obsidian 插件：
 
-- `Templater`：从 `_templater/` 创建周计划、学习进度、笔记和练习题。
+- `Templater`：如果想在 Obsidian 里手动用模板创建文件，可以把模板目录设置为 `_templater/`。正常使用 Claudian 时不需要先配置它。
 - `Tasks`：管理复习队列。
 - `QuickAdd`：做快捷入口。
 
@@ -44,8 +44,7 @@ cd <your-repo-name>
 初始化只做一次，目标是让 Claudian 生成可追踪的整体规划和当前学习上下文。
 
 1. 如果使用 Claude 框架，把 `CLAUDE.example.md` 复制一份，并把副本改名为 `CLAUDE.md`；如果使用 Codex 框架，跳过这一步。
-2. 如果使用 Templater，把模板目录设置为 `_templater/`。
-3. 在 Claudian 新对话里启动目标语言的学习 agent：
+2. 在 Claudian 新对话里启动目标语言的学习 agent：
 
 ```text
 启动 Java 学习 agent
@@ -53,7 +52,7 @@ cd <your-repo-name>
 
 也可以替换成 `Python`、`C++`、`Go` 等目标语言。
 
-4. 把学习要求告诉 agent，让它写入 `00-入口/整体学习规划.md` 和 `00-入口/当前学习上下文.md`。
+3. 把学习要求告诉 agent，让它写入 `00-入口/整体学习规划.md` 和 `00-入口/当前学习上下文.md`。
 
 示例：
 
@@ -125,7 +124,7 @@ agent 应该先汇报：
 - `01-规划规则/`：学习节奏和产物样式。
 - `02-周记录/`：周计划和每日进度。
 - `03-知识点索引/`：知识点卡片。
-- `_templater/`：Obsidian 模板。
+- `_templater/`：文件骨架。Claudian 找不到同类样本时会读取这里；也可以给 Obsidian Templater 插件使用。
 - `.claude/agents/`：Claudian 语言学习子代理。
 - `.claude/skills/`：笔记、练习题和问答整理入口。
 - `AGENTS.md`：Codex 框架规则入口。
