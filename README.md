@@ -11,7 +11,7 @@
 3. 打开 `00-入口/学习系统导航.md`。
 4. 填写 `00-入口/当前学习上下文.md`。
 5. 如果使用 Templater，把 `_templater/` 设置为模板目录。
-6. 如果使用 AI 助手，把 `CLAUDE.example.md` 改名或复制为你的工作区规则文件。
+6. 如果使用 Codex，保留并维护 `AGENTS.md`；如果使用 Claude，把 `CLAUDE.example.md` 复制为 `CLAUDE.md`。
 
 ## 目录
 
@@ -20,7 +20,8 @@
 - `02-周记录/`：示例周计划和每日进度结构。
 - `03-知识点索引/`：知识点卡片示例。
 - `_templater/`：可复制或给 Templater 使用的模板。
-- `CLAUDE.example.md`：给 AI 助手读取的执行规则。
+- `AGENTS.md`：给 Codex / agent 助手读取的执行规则。
+- `CLAUDE.example.md`：给 Claude 用户复制使用的兼容规则。
 
 ## 设计取舍
 
@@ -28,6 +29,6 @@
 
 - 用户负责填主线、阶段、卡点和实际完成情况。
 - 模板负责提供稳定结构。
-- AI 规则集中在 `CLAUDE.example.md`，避免到处散落重复制度。
+- AI 规则集中在 `AGENTS.md` / `CLAUDE.example.md`，避免到处散落重复制度。
 
 先跑通 7 天，再按自己的学科和节奏改模板。
