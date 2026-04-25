@@ -14,7 +14,6 @@
 
 可选 Obsidian 插件：
 
-- `Templater`：如果想在 Obsidian 里手动用模板创建文件，可以把模板目录设置为 `_templater/`。正常使用 Claudian 时不需要先配置它。
 - `Tasks`：管理复习队列。
 - `QuickAdd`：做快捷入口。
 
@@ -124,7 +123,7 @@ agent 应该先汇报：
 - `01-规划规则/`：学习节奏和产物样式。
 - `02-周记录/`：周计划和每日进度。
 - `03-知识点索引/`：知识点卡片。
-- `_templater/`：文件骨架。Claudian 找不到同类样本时会读取这里；也可以给 Obsidian Templater 插件使用。
+- `_skeletons/`：文件骨架。Claudian 找不到同类样本时会读取这里作为兜底结构。
 - `.claude/agents/`：Claudian 语言学习子代理。
 - `.claude/skills/`：笔记、练习题和问答整理入口。
 - `AGENTS.md`：Codex 框架规则入口。

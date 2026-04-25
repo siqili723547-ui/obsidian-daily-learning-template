@@ -16,7 +16,7 @@ agent: language-learning
 执行步骤：
 1. 先读取 `CLAUDE.md`；如果没有，读取 `CLAUDE.example.md` 和 `AGENTS.md`。
 2. 读取 `01-规划规则/笔记与练习题样式约定.md`。
-3. 查找最近的问答整理笔记；如果没有样本，使用 `_templater/qa-note.md`。
+3. 查找最近的问答整理笔记；如果没有样本，使用 `_skeletons/qa-note.md`。
 4. 把每个问题整理成一个可折叠 callout，默认格式：
 
 ```markdown

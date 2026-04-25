@@ -55,9 +55,9 @@ Claudian 新对话里可以说“启动 Java 学习 agent”“启动 Python 学
 ## 默认动作
 
 - “制定今天计划”：写入当天 `学习进度.md`。
-- “整理笔记”：使用 `_templater/daily-note.md` 的结构。
-- “出练习题”：使用 `_templater/daily-exercise.md` 的结构。
-- “整理问答”：使用 `_templater/qa-note.md` 的结构，并补复习点。
+- “整理笔记”：使用 `_skeletons/daily-note.md` 的结构。
+- “出练习题”：使用 `_skeletons/daily-exercise.md` 的结构。
+- “整理问答”：使用 `_skeletons/qa-note.md` 的结构，并补复习点。
 
 ## 输出要求
 
