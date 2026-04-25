@@ -1,6 +1,8 @@
 ﻿# Daily Workspace Rules
 
-这个文件给 Claude 助手读取。Claudian 使用 Claude 工作流时也读取这份规则；Codex 工作流优先使用仓库里的 `AGENTS.md`。
+这个文件给 Claudian 搭载 Claude 框架时读取。使用前复制为 `CLAUDE.md`。
+
+如果 Claudian 搭载 Codex 框架，请优先使用仓库里的 `AGENTS.md`。
 
 ## 工作边界
 

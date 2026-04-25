@@ -11,17 +11,20 @@
 3. 打开 `00-入口/学习系统导航.md`。
 4. 先填写 `00-入口/整体学习规划.md`，确定长期目标、阶段路线和当前主线；规划必须能追踪，不能只写宽泛愿景。
 5. 再填写 `00-入口/当前学习上下文.md`，把整体规划落到当前周和今天。
-6. 配置一个 AI agent：Codex 读取 `AGENTS.md`；Claude 读取 `CLAUDE.md`；Claudian 可兼容 Claude / Codex 工作流，按实际入口读取对应规则文件。
+6. 配置 `Claudian`，再在 Claudian 里选择搭载框架：Codex 框架读取 `AGENTS.md`；Claude 框架读取 `CLAUDE.md`。
 7. 如果使用 Templater，把 `_templater/` 设置为模板目录。
 
 ## 必需工具
 
-这个模板的核心不是单纯存 Markdown，而是让 agent 根据整体规划持续做进度追踪。建议至少准备：
+这个模板的核心不是单纯存 Markdown，而是让 Claudian 搭载的 agent 根据整体规划持续做进度追踪。必须准备：
 
 - `Obsidian`：保存规划、周记录、每日进度、复习队列和知识点卡片。
-- `Codex`、`Claude` 或 `Claudian`：读取整体规划和当前上下文，启动时汇报当前进度；进度落后时说明还差哪些产出才能追上。
+- `Claudian`：作为 AI 协作入口。
+- Claudian 搭载框架二选一：
+  - `Codex` 框架：读取 `AGENTS.md`。
+  - `Claude` 框架：把 `CLAUDE.example.md` 复制为 `CLAUDE.md` 后读取。
 
-如果没有 AI agent，也可以手动填写这些 Markdown 文件，但不会自动判断进度是否落后，也不会自动给出追赶建议。
+如果没有 Claudian，也可以手动填写这些 Markdown 文件，但不会自动判断进度是否落后，也不会自动给出追赶建议。
 
 ## 推荐插件
 
@@ -40,8 +43,8 @@
 - `02-周记录/`：示例周计划和每日进度结构。
 - `03-知识点索引/`：知识点卡片示例。
 - `_templater/`：可复制或给 Templater 使用的模板。
-- `AGENTS.md`：给 Codex / agent 助手读取的执行规则。
-- `CLAUDE.example.md`：给 Claude 用户复制为 `CLAUDE.md` 的兼容规则。
+- `AGENTS.md`：给 Claudian + Codex 框架读取的执行规则。
+- `CLAUDE.example.md`：给 Claudian + Claude 框架复制为 `CLAUDE.md` 的兼容规则。
 
 ## 设计取舍
 
@@ -50,7 +53,7 @@
 - 用户负责填主线、阶段、卡点和实际完成情况。
 - 整体规划负责决定方向和进度判断标准，周计划和每日进度只负责追踪执行。
 - 模板负责提供稳定结构。
-- AI agent 负责读取整体规划、汇报当前进度、判断是否落后并给出追赶差距。
-- AI 规则集中在 `AGENTS.md` / `CLAUDE.example.md`，Claudian 按所选 Claude / Codex 工作流读取对应入口，避免到处散落重复制度。
+- Claudian 搭载的 agent 负责读取整体规划、汇报当前进度、判断是否落后并给出追赶差距。
+- AI 规则集中在 `AGENTS.md` / `CLAUDE.example.md`，Claudian 按所选 Codex / Claude 框架读取对应入口，避免到处散落重复制度。
 
 先写整体规划，再跑通 7 天，然后按自己的学科和节奏改模板。
