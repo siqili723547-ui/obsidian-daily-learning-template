@@ -4,6 +4,8 @@
 
 如果 Claudian 搭载 Claude 框架，请改用 `CLAUDE.md`。
 
+Claudian 新对话里可以说“启动 Java 学习 agent”“启动 Python 学习 agent”或“启动语言学习 agent”。对应子代理配置在 `.claude/agents/language-learning.md`，它会按本文件和整体规划接手进度追踪。
+
 ## 工作边界
 
 - 只维护当前学习系统目录内的文件。

@@ -1,5 +1,6 @@
 .obsidian/
-.claude/
 .codex/
 .DS_Store
 Thumbs.db
+.claude/claudian-settings.json
+.claude/sessions/
