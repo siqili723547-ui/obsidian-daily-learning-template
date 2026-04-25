@@ -14,6 +14,16 @@
 6. 如果使用 Templater，把 `_templater/` 设置为模板目录。
 7. 如果使用 Codex，保留并维护 `AGENTS.md`；如果使用 Claude，把 `CLAUDE.example.md` 复制为 `CLAUDE.md`。
 
+## 推荐插件
+
+这个模板的 Markdown 文件可以直接在 Obsidian 里使用。插件不是硬性依赖，但推荐安装：
+
+- `Templater`：用于从 `_templater/` 快速创建周计划、学习进度、笔记和练习题。
+- `Tasks`：用于管理复习队列里的 D+1 / D+3 / D+7 回顾任务。
+- `QuickAdd`：用于把“新建学习进度”“新建周计划”“登记复习任务”做成快捷入口。
+
+建议先只启用 `Templater`，跑通一周后再加 `Tasks` 和 `QuickAdd`。
+
 ## 目录
 
 - `00-入口/`：整体规划、导航、当前上下文和复习队列。
