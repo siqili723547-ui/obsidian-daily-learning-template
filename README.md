@@ -12,10 +12,7 @@
   - `Codex`：直接读取 `AGENTS.md`，不需要额外复制规则文件。
   - `Claude`：需要把 `CLAUDE.example.md` 复制一份，并把副本改名为 `CLAUDE.md`。Claudian 会读取 `CLAUDE.md` 作为项目规则。
 
-可选 Obsidian 插件：
-
-- `Tasks`：管理复习队列。
-- `QuickAdd`：做快捷入口。
+不要求额外安装 Obsidian 插件。复习队列、周计划、学习进度和快捷入口都可以直接通过 Claudian 维护。
 
 ## 部署
 
