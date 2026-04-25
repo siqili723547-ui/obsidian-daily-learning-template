@@ -4,6 +4,8 @@ A Claudian-powered Obsidian template for planning, tracking, and reviewing progr
 
 Click **Use this template** on GitHub to create your own programming language learning vault.
 
+当前模板处于滚动更新阶段，请以 `main` 分支为准；`v0.1.0` 只是早期试用快照。
+
 一个用于学习计算机语言的 Obsidian 模板。它把整体规划、每日进度、代码练习、复习队列和知识点卡片放在同一套结构里，并通过 Claudian 的语言学习 agent 做进度追踪。
 
 模板只包含空白结构、规则和模板，不包含个人学习记录。
