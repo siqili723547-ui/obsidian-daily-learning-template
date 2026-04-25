@@ -1,6 +1,6 @@
 # Daily Workspace Rules
 
-这个文件给 Codex / agent 助手读取。
+这个文件给 Codex / agent 助手读取。Claudian 使用 Codex 工作流时也读取这份规则。
 
 如果你用 Claude，也可以把同样内容放进 `CLAUDE.md`。
 
