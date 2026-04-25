@@ -1,6 +1,6 @@
 ﻿# Daily Workspace Rules
 
-这个文件给 Claude 助手读取。Codex 用户优先使用仓库里的 `AGENTS.md`。
+这个文件给 Claude / Claudian 助手读取。Codex 用户优先使用仓库里的 `AGENTS.md`。
 
 ## 工作边界
 
