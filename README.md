@@ -9,8 +9,8 @@
 - `Obsidian`：保存学习系统。
 - `Claudian`：启动语言学习 agent，负责读取规划、汇报进度、判断是否落后。
 - Claudian 搭载框架二选一：
-  - `Codex`：读取 `AGENTS.md`。
-  - `Claude`：把 `CLAUDE.example.md` 复制为 `CLAUDE.md` 后读取。
+  - `Codex`：直接读取 `AGENTS.md`，不需要额外复制规则文件。
+  - `Claude`：需要把 `CLAUDE.example.md` 复制一份，并把副本改名为 `CLAUDE.md`。Claudian 会读取 `CLAUDE.md` 作为项目规则。
 
 推荐 Obsidian 插件：
 
@@ -41,7 +41,7 @@ cd <your-repo-name>
 
 ## 初始化
 
-1. 如果使用 Claude 框架，把 `CLAUDE.example.md` 复制为 `CLAUDE.md`。
+1. 如果使用 Claude 框架，把 `CLAUDE.example.md` 复制一份，并把副本改名为 `CLAUDE.md`；如果使用 Codex 框架，跳过这一步。
 2. 如果使用 Templater，把模板目录设置为 `_templater/`。
 3. 在 Claudian 新对话里输入：
 
