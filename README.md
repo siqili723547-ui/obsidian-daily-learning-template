@@ -8,6 +8,24 @@ Click **Use this template** on GitHub to create your own programming language le
 
 模板只包含空白结构、规则和模板，不包含个人学习记录。
 
+## 工作流程
+
+```mermaid
+flowchart TD
+    A["Use this template"] --> B["用 Obsidian 打开仓库"]
+    B --> C["启动目标语言学习 agent"]
+    C --> D["告诉 Claudian 学习目标、时间、基础和期限"]
+    D --> E["写入整体学习规划和当前学习上下文"]
+    E --> F["生成本周周计划"]
+    F --> G["每天启动 agent 汇报进度"]
+    G --> H["写入笔记、练习题和代码产出"]
+    H --> I["更新学习进度和复习队列"]
+    I --> J{"进度是否落后？"}
+    J -- "否" --> G
+    J -- "是" --> K["先补缺口，再开启新主题"]
+    K --> G
+```
+
 ## 必需工具
 
 - `Obsidian`：保存学习系统。
