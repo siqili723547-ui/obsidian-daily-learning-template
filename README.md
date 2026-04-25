@@ -28,6 +28,47 @@
 
 如果没有 Claudian，也可以手动填写这些 Markdown 文件，但不会自动判断进度是否落后，也不会自动给出追赶建议。
 
+## 部署教程
+
+### 方式一：作为独立学习仓库
+
+适合想把某一门语言的学习记录单独放到 GitHub 的情况。
+
+1. 在 GitHub 上用本仓库创建自己的仓库，或直接 clone 到本地：
+
+```bash
+git clone <your-repo-url>
+cd <your-repo-name>
+```
+
+2. 用 Obsidian 打开这个目录。
+3. 打开 `00-入口/整体学习规划.md`，先填目标语言、阶段路线、语言模块和进度判断标准。
+4. 打开 `00-入口/当前学习上下文.md`，把整体规划落到当前周和今天。
+5. 如果使用 Claudian + Claude 框架，把 `CLAUDE.example.md` 复制为 `CLAUDE.md`；如果使用 Claudian + Codex 框架，直接保留 `AGENTS.md`。
+6. 在 Claudian 新对话里输入“启动 Java 学习 agent”或“启动 Python 学习 agent”。
+7. 确认 agent 启动后会先汇报当前进度、是否落后、追上进度还差哪些产出。
+
+### 方式二：放进已有 Obsidian Vault
+
+适合已经有一个大的 Vault，只想把这个学习系统作为其中一个子目录。
+
+1. 把本仓库复制到 Vault 下的一个独立目录，例如 `java-learning/` 或 `python-learning/`。
+2. 用 Obsidian 打开 Vault，并进入这个学习目录。
+3. 在 Claudian 中把工作目录切到这个学习目录，避免 agent 修改 Vault 里的其他笔记。
+4. 按上面的步骤填写 `整体学习规划.md` 和 `当前学习上下文.md`。
+5. 在 Claudian 新对话里启动对应语言的学习 agent。
+
+### 部署后检查
+
+完成部署后，至少检查这些内容：
+
+- `00-入口/整体学习规划.md` 已经写清目标语言、阶段、最低代码产出和落后判断标准。
+- `00-入口/当前学习上下文.md` 已经写清当前周、当前模块和今天要做什么。
+- Claudian 能识别 `.claude/agents/language-learning.md`。
+- 使用 Claude 框架时，仓库根目录存在 `CLAUDE.md`。
+- 使用 Codex 框架时，仓库根目录存在 `AGENTS.md`。
+- Obsidian 的 Templater 模板目录指向 `_templater/`。
+
 ## 推荐插件
 
 这些 Obsidian 插件不是硬性依赖，但推荐安装：
